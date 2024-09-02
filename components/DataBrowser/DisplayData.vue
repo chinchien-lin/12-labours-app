@@ -98,13 +98,20 @@ export default {
 
     getDatasetImg(item) {
       let url = "";
-      if (item.scaffoldViews.length > 0) {
-        url = this.$config.query_api_url + item.scaffoldViews[0].image_url;
-      } else if (item.thumbnails.length > 0) {
+
+      if (item.thumbnails.length > 0) {
         url = this.$config.query_api_url + item.thumbnails[0].image_url;
-      } else {
+      }else {
         url = this.imgPlaceholder;
       }
+
+      // if (item.scaffoldViews.length > 0) {
+      //   url = this.$config.query_api_url + item.scaffoldViews[0].image_url;
+      // } else if (item.thumbnails.length > 0) {
+      //   url = this.$config.query_api_url + item.thumbnails[0].image_url;
+      // } else {
+      //   url = this.imgPlaceholder;
+      // }
       return url;
     },
 
