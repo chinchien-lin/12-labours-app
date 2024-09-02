@@ -51,6 +51,10 @@
                   {{ item.numberSamples }} {{ item.numberSamples > 1 ? 'samples' : 'sample' }} out of
                   {{ item.numberSubjects }} {{ item.numberSubjects > 1 ? 'subjects' : 'subject' }}
                 </div>
+                <div>
+                  <strong>category</strong>
+                  {{ item.category }}
+                </div>
               </section>
             </section>
             <hr />
