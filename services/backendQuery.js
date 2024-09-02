@@ -136,10 +136,10 @@ async function fetchPaginationData(path, filter, limit, page, search, relation, 
     order: sort
   };
   await axios
-    .post(`${path}/graphql/pagination/?search=${search}`, payload, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
+    .post(`${path}/postgres/pagination/?search=${search}`, payload, {
+      // headers: {
+      //   Authorization: `Bearer ${accessToken}`,
+      // },
     })
     .then((res) => {
       fetched_data = res.data;
