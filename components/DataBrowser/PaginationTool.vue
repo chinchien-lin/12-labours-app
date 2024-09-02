@@ -42,7 +42,8 @@ export default {
   data: () => {
     return {
       page: 1,
-      limit: 10,
+      // limit: 10,
+      limit: 50,
       pageSizeOptions: [10, 20, 50, "View All"],
       order: "Oldest",
       orderList: [

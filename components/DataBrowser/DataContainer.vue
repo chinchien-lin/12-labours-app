@@ -267,6 +267,7 @@ export default {
     },
 
     updatePageLimit(pageVal, limitVal) {
+      limitVal = 1000;
       const isPageChanged = this.pageNumber !== pageVal;
       const isLimitChanged = this.limitNumber !== limitVal;
       if (isPageChanged || isLimitChanged) {
